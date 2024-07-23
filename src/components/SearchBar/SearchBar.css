@@ -1,59 +1,56 @@
-#root{
-   
-    background-size: cover;
-    display: flex;
-    margin: 0 auto;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    
-    
-    
-    font-family: "Times New Roman",cursive;
-
+#root {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Times New Roman", cursive;
 }
 
 .search-bar {
-    margin: 20px 0;
-  }
-  
-  .search-bar input {
-    padding: 10px;
-    align-items: center;
-    margin-left: 440px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    max-width: 250px;
-  }
-  
-  .search-bar button {
-    padding: 10px;
-    font-size: 16px;
-    margin-left: 10px;
-    background-color: #004080;
-    color: white;
-    border: none;
-    align-items: center;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .search-bar button:hover {
-    background-color: #003060;
-  }
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
 
-  h1{
-    font-size: 50px;
-    margin-left: 450px;
-    align-items: center;
-  }
-  
-  @media (max-width: 600px) {
-    .search-bar {
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #00FFFF; /* Neon blue */
+  border-radius: 4px;
+  max-width: 250px;
+  background-color: black;
+  color: #00FFFF; /* Neon blue */
+}
+
+.search-bar button {
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: #00FFFF; /* Neon blue */
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0099CC; /* Darker neon blue */
+}
+
+h1 {
+  font-size: 50px;
+  color: #00FFFF; /* Neon blue */
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .search-bar {
       flex-direction: column;
-    }
-    .search-bar input {
-      margin-bottom: 10px;
-    }
+      align-items: center;
   }
+  .search-bar input {
+      margin-bottom: 10px;
+  }
+}
